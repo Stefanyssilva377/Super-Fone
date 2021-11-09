@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Super fone</title>
+
+ </head>
+ <body>
+    
+ <section id="container"> 
+   <object id="shapes">
+     <img  class="shape1"  src="img/img/shape1.png">
+     <img class="shape2"  src="./img/img/shape2.png">
+   </object>
+
+    <header id="header">
+         <a href="#" id="brand"> 
+           <img src="img/img/brand.png"  alt="logo do site">
+        </a>
+
+                <nav id="navegation">       
+                    <ul>
+                        <li><a href="#">Recursos</a></li>
+                        <li><a href="#">Galeria</a></li>
+                        <li><a href="#">Informações</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li class="item-menu-responsive"><a href="#">Sacola</a></li>
+                        <li class="item-menu-responsive"><a href="#">login</a></li>
+
+                    </ul>
+                </nav>
+
+                <div class="menu-toogle"><img src="img/img/barra-de-menu.png" alt="Menu"></div>
+
+             <button id="btn-bag"   class="button">Sacola <img src="img/img/shopping-cart.png"></button>
+             <button id="btn-login" class="button">login <img src="./img/img/user.png"></button>
+
+    </header>
+   <article id="article">
+    <span>B3 </span>
+    <h1> Super Fone Extrema Qualidade de Som Top </h1>
+    <h2> Você irá se surpreender com a qualidade de som desse fone sem fio. Viaje em autos graves e agudos em suas músicas ou vídeos. </h2>
+
+   <div class="send-mensage">
+     <i><img src="./img/img/envelope.png" alt="Icone de uma Carta de Mensagem"></i>
+     <input type="email" placeholder="escreva seu e-mail">
+     <a href="#openModal"><button id="send-btn"> Enviar </button></a>
+    </div>
+   </article>
+
+
+  <picture id="picture">
+    <img src="./img/img/phone.png" alt="ilustração do fone."> 
+
+  </picture>
+
+  <footer id="footer">
+    <small>&copy; Desenvolvimento frontend. </small>
+ </footer>
+
+   </section>
+
+   <div id="openModal" class="modalDialog">
+      <div class="body-modal" >
+       <a href="# close" title="fechar" class="closeModal"></a>
+          <div class="side-left">
+            <img src="img/img/phone.png" class="phone-msg">
+            <img src="img/img/envelope.png" alt="Icone de uma Carta">
+            <h1> Mensagen Enviada </h1>
+         </div>
+                <div class="side-right">
+                  <p>Obrigado por enviar a mensagem, vamos responder em breve! </p>
+                </div>
+
+      </div>
+   </div>
+
+
+
+
+
+     <script src="js/jquery-3.6.0.min.js";></script>
+  <script>
+    $(document).ready(function(){
+      $('.menu-toogle').click(function(){
+        $('nav').toggleClass('active')
+      })
+    })
+ 
+  </script>
+
+
+  </body>
+ </html>
